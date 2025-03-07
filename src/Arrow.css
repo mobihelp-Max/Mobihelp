@@ -1,0 +1,102 @@
+#arrowAnim {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 5vw;
+  width: 5vw;
+  height: 5vw;
+  border: 2.5vw solid;
+  border-color: white transparent transparent white;
+  transform: rotate(-45deg);
+}
+
+.arrowRight {
+  position: absolute;
+  top: 5vw;
+  width: 5vw;
+  height: 5vw;
+  border: 2.5vw solid;
+  border-color: white transparent transparent white;
+  transform: rotate(135deg);
+}
+
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 7s linear infinite;
+  animation: slide 7s linear infinite;
+}
+
+.arrowSlidingRight {
+  position: absolute;
+  -webkit-animation: slideRightToLeft 7s linear infinite;
+  animation: slideRightToLeft 7s linear infinite;
+}
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 7s linear infinite;
+  animation: slide 7s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.delay4 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.delay5 {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.delay6 {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+/* Right to Left (Default)*/
+@-webkit-keyframes slide {
+  0% { opacity:0; transform: translateX(40vw); }
+  20% { opacity:1; transform: translateX(25vw); }
+  80% { opacity:1; transform: translateX(-25vw); }
+  100% { opacity:0; transform: translateX(-40vw); }
+}
+@keyframes slide {
+  0% { opacity:0; transform: translateX(40vw); }
+  20% { opacity:1; transform: translateX(25vw); }
+  80% { opacity:1; transform: translateX(-25vw); }
+  100% { opacity:0; transform: translateX(-40vw); }
+}
+
+/* Right to Left */
+@-webkit-keyframes slideRightToLeft {
+  0% { opacity:0; transform: translateX(-40vw); }
+  20% { opacity:1; transform: translateX(-25vw); }
+  80% { opacity:1; transform: translateX(25vw); }
+  100% { opacity:0; transform: translateX(40vw); }
+}
+@keyframes slideRightToLeft {
+  0% { opacity:0; transform: translateX(-40vw); }
+  20% { opacity:1; transform: translateX(-25vw); }
+  80% { opacity:1; transform: translateX(25vw); }
+  100% { opacity:0; transform: translateX(40vw); }
+}

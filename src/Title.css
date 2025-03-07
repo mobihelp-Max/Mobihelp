@@ -1,0 +1,20 @@
+#titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+}
+
+#mobihelpTitle{
+    margin: 0;
+    font-size: 11em;
+    line-height: 1.1;
+}
+
+#btn_switch{
+    position: relative;
+    z-index: 10;
+}
